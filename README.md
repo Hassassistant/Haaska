@@ -1,29 +1,43 @@
+
 #   Haaska
 
 This repository contains scripts that help you set up a Haaska.
 
 ## Prerequisites
 
-1.  Home Assistant Configuration: Ensure the following YAML entries are added to your Home Assistant configuration.yaml file:
+ - [ ] Home Assistant Configuration: Ensure the following YAML entries
+       are added to your Home Assistant configuration.yaml file:
+       
+ ```yaml
+       api:
+       
+       alexa:   
+         smart_home: 
+ ```
+ 
+ - [ ] Long-lived Access Token: In Home Assistant, create a long-lived
+       access token and keep it for later use.
+
     
-    ```yaml
-    api:
+
+ - [ ] AWS Account: Sign up for a free tier AWS account if you do not
+       already have one.
+
     
-    alexa:
-      smart_home:
-    ```
-2.  Long-lived Access Token: In Home Assistant, create a long-lived access token and keep it for later use.
+
+ - [ ] AWS Access Key: Create an AWS Access Key and keep it for later
+       use.
+
     
-3.  AWS Account: Sign up for a free tier AWS account if you do not already have one.
-    
-4.  AWS Access Key: Create an AWS Access Key and keep it for later use.
-    
-5.  Alexa Skill: Create an Alexa skill in the Alexa Developer Console and take note of the Skill ID.
+
+ - [ ] Alexa Skill: Create an Alexa skill in the Alexa Developer Console
+       and take note of the Skill ID.
+
     
 
 ## Setup
 
-1.  Download the ZIP file to your local machine and extract the contents.
+1.  Clone this repository on your local machine.
     
 2.  Fill in the `constants.py` file with the information captured during the Prerequisites steps (Home Assistant URL, long-lived access token, AWS access key and secret key, AWS region, and Alexa Skill ID).
     
@@ -37,7 +51,26 @@ This repository contains scripts that help you set up a Haaska.
     HOME_ASSISTANT_URL = 'Your Home Assistant URL' # example: 'https://your-home-assistant-url.com'
     BEARER_TOKEN = 'Your Long-lived Access Token'
     ALEXA_SKILL_ID = 'Your Alexa Skill ID'
-  ```
+```
+<br>
+Region Select<br>
+This is based on the region you are using for your Alexa Skill
+<br>
+
+<br>
+
+| Skill language                                             |  Endpoint Region               |  Lambda Function Region |   Constants File |
+|------------------------------------------------------------|--------------------------------|-------------------------|------------------|
+|  English (US), English (CA)                                |  North America                 |  US East (N. Virginia)  |  us-east-1       |
+|  English (UK), French (FR), German, Italian, Spanish (ES)  |  Europe, India                 | EU (Ireland)            |  eu-west-1       |
+|  English (IN)                                              | Europe, India                  | EU (Ireland)            |  eu-west-1       |
+|  Japanese, English (AU)                                    |  Far East                      | US West (Oregon)        |   us-west-2      |
+
+
+<br>
+<br>
+
+
 3.  If you already have Python installed, you can directly run the `main.py` file.
     
     ```bash
