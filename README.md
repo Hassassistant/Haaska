@@ -23,7 +23,7 @@ This repository contains scripts that help you set up a Haaska.
 
 ## Setup
 
-1.  Clone this repository on your local machine.
+1.  Download the ZIP file to your local machine and extract the contents.
     
 2.  Fill in the `constants.py` file with the information captured during the Prerequisites steps (Home Assistant URL, long-lived access token, AWS access key and secret key, AWS region, and Alexa Skill ID).
     
