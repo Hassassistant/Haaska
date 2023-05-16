@@ -13,7 +13,7 @@ Haaska is used to have alexa be able to communicate with all Home Assistant enti
 api:
        
 alexa:   
-    smart_home: 
+   smart_home: 
  ```
  
  - [ ] Long-lived Access Token: In Home Assistant, create a long-lived
