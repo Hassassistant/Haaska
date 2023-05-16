@@ -10,10 +10,10 @@ Haaska is used to have alexa be able to communicate with all Home Assistant enti
        are added to your Home Assistant configuration.yaml file:
        
  ```yaml
-       api:
+api:
        
-       alexa:   
-         smart_home: 
+alexa:   
+  smart_home: 
  ```
  
  - [ ] Long-lived Access Token: In Home Assistant, create a long-lived
@@ -44,14 +44,14 @@ Haaska is used to have alexa be able to communicate with all Home Assistant enti
     
  ```py
     
-    # constants.py
+# constants.py
     
-    AWS_ACCESS_KEY = 'Your AWS Access Key'
-    AWS_SECRET_KEY = 'Your AWS Secret Key'
-    AWS_REGION = 'Your AWS Region' # example: 'us-west-2'
-    HOME_ASSISTANT_URL = 'Your Home Assistant URL' # example: 'https://your-home-assistant-url.com'
-    BEARER_TOKEN = 'Your Long-lived Access Token'
-    ALEXA_SKILL_ID = 'Your Alexa Skill ID'
+AWS_ACCESS_KEY = 'Your AWS Access Key'
+AWS_SECRET_KEY = 'Your AWS Secret Key'
+AWS_REGION = 'Your AWS Region' # example: 'us-west-2'
+HOME_ASSISTANT_URL = 'Your Home Assistant URL' # example: 'https://your-home-assistant-url.com'
+BEARER_TOKEN = 'Your Long-lived Access Token'
+ALEXA_SKILL_ID = 'Your Alexa Skill ID'
 ```
 <br>
 Region Select<br>
@@ -75,7 +75,7 @@ This is based on the region you are using for your Alexa Skill
 3.  If you already have Python installed, you can directly run the `main.py` file.
     
     ```bash
-    python main.py
+python main.py
     ```
     If you don't have Python installed, run the `run.ps1` PowerShell script. 
     This will install Python and necessary Python packages before running `main.py`.
