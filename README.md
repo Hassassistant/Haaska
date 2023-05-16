@@ -2,6 +2,7 @@
 #   Haaska
 
 This repository contains scripts that help you set up a Haaska.
+Haaska is used to have alexa be able to communicate with all Home Assistant entities.
 
 ## Prerequisites
 
